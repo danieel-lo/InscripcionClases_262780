@@ -82,17 +82,12 @@ public class PantallaInscripcion implements ObservadorInscripcion {
 
     public void iniciarInscripcion() {
         Scanner teclado = new Scanner(System.in);
-
         mostrarListasCursos();
-
         int opcion = -1;
-
         while (opcion != 0) {
             System.out.print("Selecciona un curso 0 para finalizar: ");
-
             if (teclado.hasNextInt()) {
                 opcion = teclado.nextInt();
-
                 if (opcion == 0) {
                     finalizarInscripcion();
                 } else {
