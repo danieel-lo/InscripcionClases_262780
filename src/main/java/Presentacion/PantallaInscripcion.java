@@ -88,7 +88,7 @@ public class PantallaInscripcion implements ObservadorInscripcion {
         int opcion = -1;
 
         while (opcion != 0) {
-            System.out.print("Selecciona un curso (0 para finalizar): ");
+            System.out.print("Selecciona un curso 0 para finalizar: ");
 
             if (teclado.hasNextInt()) {
                 opcion = teclado.nextInt();
